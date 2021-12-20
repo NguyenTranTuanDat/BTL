@@ -15,7 +15,7 @@
     <body>
         <!-- Header -->
         <header class="component">
-            <img src="./images/logo.svg" class="logo" />
+            <a href="index.html"><img src="./images/logo.svg" class="logo" /></a>
             <nav>
                 <li><img src="./images/news.svg" /> Bảng tin</li>
                 <li>
