@@ -1,0 +1,173 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-image: url('../images/background.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 120px 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main .logo {
+    display: flex;
+    color: #24a8d8;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 24px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.logo .logo-name {
+    font-size: 36px;
+    margin-left: 6px;
+}
+
+.question {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.question-small {
+    margin: 10px 0;
+}
+
+.question-large {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.answer {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+form {
+    width: 100%;
+    max-width: 424px;
+    height: max-content;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    justify-self: flex-end;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+form h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+form .full-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 16px 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: 1px solid #aaa;
+    margin: 12px 0;
+}
+
+input:hover {
+    border-color: #000;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #24a8d8;
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: #fff;
+    margin-top: 28px;
+    cursor: pointer;
+    transition: all 0.1s linear 0s;
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    -ms-transition: all 0.1s linear 0s;
+    -o-transition: all 0.1s linear 0s;
+}
+
+.btn:disabled {
+    background: lightgray;
+    cursor: not-allowed;
+    color: #000;
+}
+
+.btn:disabled:hover {
+    background: lightgray;
+}
+
+.btn:hover {
+    background-color: #006386;
+}
+
+.policy {
+    font-size: 14px;
+    text-align: center;
+    margin: 28px;
+}
+
+.policy span,
+.sign-in a {
+    color: #24a8d8;
+}
+
+.policy span:hover,
+.sign-in a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sign-in {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+@media only screen and (max-width: 959px) {
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 16px;
+    }
+
+    .overview > p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    form .full-name {
+        display: block;
+    }
+}

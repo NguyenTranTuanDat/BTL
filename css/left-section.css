@@ -1,0 +1,79 @@
+.left {
+    display: grid;
+    row-gap: 18px;
+    height: max-content;
+}
+
+.user-section {
+    padding: 16px;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.user-item:first-child {
+    color: #ff0000;
+}
+
+.user-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.left > img {
+    width: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.left .weather {
+    padding: 12px 16px;
+}
+
+.weather h4 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.weather .weekday {
+    font-size: 13px;
+}
+
+.weather img {
+    width: 62px;
+}
+
+.weather .temp {
+    display: flex;
+    align-items: center;
+}
+
+.weather .temp span {
+    font-size: 22px;
+}
+
+.weather .temp p {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.weather .weather-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 14px;
+    gap: 6px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.weather .weather-info span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    display: block;
+}

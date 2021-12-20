@@ -1,0 +1,7 @@
+body {
+    padding: 78px 64px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #fafafb;
+    gap: 20px;
+}
