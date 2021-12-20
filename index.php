@@ -17,7 +17,7 @@
         <header class="component">
             <a href="index.html"><img src="./images/logo.svg" class="logo" /></a>
             <nav>
-                <li><img src="./images/news.svg" /> Bảng tin</li>
+                <a href="#"><li><img src="./images/news.svg" /> Bảng tin</li></a>
                 <li>
                     <img src="./images/experience.svg" class="icon" /> Trải
                     nghiệm
