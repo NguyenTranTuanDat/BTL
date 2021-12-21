@@ -1,4 +1,11 @@
 <?php
+
+session_start();
+
+if(!isset($_SESSION['logged'])){
+    header("location: login.php");
+}
+
     require('./config.php');
 
     if(!isset($_POST['btnSignUp'])){
@@ -13,7 +20,7 @@
     $rePassword = $_POST['rePassword'];
 
     // Handle register
-    $sqlSelect = "SELECT * FROM users WHERE email = '$email'";
+    $sqlSelect = "SELECT * FROM users WHERE email = '$email'  ";
     $isExisted = mysqli_query($conn, $sqlSelect);
 
     if(mysqli_num_rows($isExisted) > 0){

@@ -1,8 +1,8 @@
 <?php
-    session_start();
-    if(!isset($_SESSION['logged'])){
-        header('location:login.php');
-    }
+    // session_start();
+    // if(!isset($_SESSION['logged'])){
+    //     header('location:login.php');
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/register.css" />
-        <title>Document</title>
+        <title>Đăng nhập| Hahalolo</title>
     </head>
     <body>
         <main>
@@ -32,7 +32,7 @@
                     nghiệm và cảm nhận các tiện ích tuyệt vời của chúng tôi.
                 </p>
             </div>
-            <form action="handleLogin.php" method="POST">
+            <form action="handleLogin.php" method="post">
                 <h4>Đăng nhập</h4>
                 <input type="text" placeholder="Email" required name="email"/>
                 <input type="password" placeholder="Mật khẩu" required name="password"/>

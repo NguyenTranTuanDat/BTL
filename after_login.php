@@ -27,6 +27,7 @@
         <!-- Header -->
         <header class="component">
             <a href="index.php"><img src="./images/logo.svg" class="logo" /></a>
+            
             <nav>
                 <a href="#"><li><img src="./images/news.svg" /> Bảng tin</li></a>
                 <li>
