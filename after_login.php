@@ -2,8 +2,7 @@
     session_start();
 
     // if(!isset($_SESSION['logged'])){
-    //     header("location:login.php");
-        
+    //     header("location: login.php");
     // }
 ?>
 
@@ -14,12 +13,13 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/header.css" />
         <link rel="stylesheet" href="./css/left-section.css" />
         <link rel="stylesheet" href="./css/right-section.css" />
         <link rel="stylesheet" href="./css/main.css" />
-        <link rel="icon" href="./images/logo.svg" type="img/x-icon">
+        <link rel="icon" href="./images/logo.svg">
         <title>Bảng tin| Hahalolo</title>
         
     </head>
@@ -27,13 +27,10 @@
     <body>
         <!-- Header -->
         <header class="component">
-<<<<<<< HEAD
-            <img src="./images/logo.svg" class="logo" />
-=======
             <a href="index.php"><img src="./images/logo.svg" class="logo" /></a>
->>>>>>> tranvanmanh
+            
             <nav>
-                <li><img src="./images/news.svg" /> Bảng tin</li>
+                <a href="#"><li><img src="./images/news.svg" /> Bảng tin</li></a>
                 <li>
                     <img src="./images/experience.svg" class="icon" /> Trải
                     nghiệm
@@ -49,6 +46,8 @@
                 </li>
             </nav>
             <div class="user-info">
+                <img src="./images/pronounce.png" alt="" class="icon">
+                <img src="./images/user-header.png" alt="" class="icon">
                 <img src="./images/cart.svg" class="icon" />
                 <img src="./images/wallet.svg" class="icon" />
                 <img src="./images/message.svg" />
@@ -59,18 +58,16 @@
                         Đổi màu nền
                     </li>
                     <li>
-                    <script type="text/javascript">
-                                    function Redirect() {
-                                    window.location="login.php";
-                                    }
-                                
-                            </script>
-                        <span class="btnlogin_inweb" onclick="Redirect();"> 
-                            <img src="./images/log-out.svg" class="" name="login.php" />
-                                   <span class="txtlogin">Đăng Nhập</span> 
-                        </span>
-
+                        <img src="./images/log-out.svg" class="icon" name="logout" />
+                        Đăng xuất
+                        <?php
+                            if(isset($_SESSION['logout'])){
+                                header("location: header.php");
+                            }
+                        ?>
                     </li>
+
+
                 </div>
             </div>
         </header>
