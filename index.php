@@ -34,6 +34,7 @@
                 </li>
             </nav>
             <div class="user-info">
+
                 <img src="./images/cart.svg" class="icon" />
                 <img src="./images/wallet.svg" class="icon" />
                 <img src="./images/message.svg" />
