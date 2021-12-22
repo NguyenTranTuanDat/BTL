@@ -2,7 +2,8 @@
     session_start();
 
     // if(!isset($_SESSION['logged'])){
-    //     header("location: login.php");
+    //     header("location:login.php");
+        
     // }
 ?>
 
@@ -18,7 +19,7 @@
         <link rel="stylesheet" href="./css/left-section.css" />
         <link rel="stylesheet" href="./css/right-section.css" />
         <link rel="stylesheet" href="./css/main.css" />
-        <link rel="icon" href="./images/logo.svg">
+        <link rel="icon" href="./images/logo.svg" type="img/x-icon">
         <title>Bảng tin| Hahalolo</title>
         
     </head>
@@ -54,13 +55,17 @@
                         Đổi màu nền
                     </li>
                     <li>
-                        <img src="./images/log-out.svg" class="icon" name="login" />
-                        Đăng nhập
-                        <?php
-                            if(isset($_SESSION['logged'])){
-                                header("local:login.php");
-                            }
-                        ?>
+                    <script type="text/javascript">
+                                    function Redirect() {
+                                    window.location="login.php";
+                                    }
+                                
+                            </script>
+                        <span class="btnlogin_inweb" onclick="Redirect();"> 
+                            <img src="./images/log-out.svg" class="" name="login.php" />
+                                   <span class="txtlogin">Đăng Nhập</span> 
+                        </span>
+
                     </li>
                 </div>
             </div>

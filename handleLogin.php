@@ -29,7 +29,7 @@
             while($row = mysqli_fetch_array($result)){
                 if(password_verify($password, $row["password"])){
                     $_SESSION['email'] = $email;
-                    header('location:index.php');
+                    header('location:after_login.php');
                 }else{
                     header('location:login.php?error=user');
                 }
