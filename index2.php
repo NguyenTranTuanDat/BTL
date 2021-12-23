@@ -40,11 +40,17 @@
                 </li>
             </nav>
             <div class="user-info">
+                <img src="./images/ring.svg" class="icon" />
+                <img src="./images/people.svg" class="icon" />
                 <img src="./images/cart.svg" class="icon" />
                 <img src="./images/wallet.svg" class="icon" />
                 <img src="./images/message.svg" />
                 <img src="./images/user.svg" alt="" id="user" />
                 <div class="setting component">
+                <li>
+                        <img src="./images/notebook.svg" class="icon" />
+                        Sổ tay
+                    </li>
                     <li id="toggle-theme">
                         <img src="./images/darkmode.svg" class="icon" />
                         Chế độ tối
